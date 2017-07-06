@@ -1,0 +1,261 @@
+<!DOCTYPE html><!--[if lt IE 9]>
+<html class='lt-ie9 no-js' lang='en'>
+<![endif]-->
+<!--[if gte IE 9]><!-->
+<html class="no-js" lang="en">
+<!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <title>CaptainScrum : Votre coach agile</title>
+  <meta name="description" content="Pilotez vos projets agiles en maitrisant vos délais et votre budget">
+  <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=0">
+  <link rel="stylesheet" href="./styles/main.css">
+  <!-- Facebook Pixel Code -->
+<script>
+!function(f,b,e,v,n,t,s)
+{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+n.queue=[];t=b.createElement(e);t.async=!0;
+t.src=v;s=b.getElementsByTagName(e)[0];
+s.parentNode.insertBefore(t,s)}(window,document,'script',
+'https://connect.facebook.net/en_US/fbevents.js');
+ fbq('init', '1409393065820922');
+fbq('track', 'PageView');
+</script>
+<noscript>
+ <img height="1" width="1"
+src="https://www.facebook.com/tr?id=1409393065820922&ev=PageView
+&noscript=1"/>
+</noscript>
+<!-- End Facebook Pixel Code -->
+</head>
+<body><!--[if lt IE 9]>
+<p class='browsehappy'>You are using an <strong>outdated</strong> browser. Please <a href='http://browsehappy.com/'>upgrade your browser</a> to improve your experience.</p>
+<![endif]-->
+  <!--<div class="layout layout--modal layout--modal--bottom" id="video-modal">
+    <div class="layout--modal__content">
+      <div class="row end-xs">
+        <div class="col-xs-4">
+          <div class="button button--light button--transparent button--large button--icon-alone hide-modal"><i class="icon-close"></i>
+          </div>
+        </div>
+      </div>
+      <div class="video video--16_9">
+        <iframe width="100%" height="auto" src="https://www.youtube.com/embed/CQmZCTFrNus" frameborder="0" allowfullscreen></iframe>
+      </div>
+    </div>
+  </div>-->
+  <div class="layout bg-primary layout--backdrop-modal hide-modal"></div>
+  <div class="layout layout--scroll">
+    <div class="container-wrapper bg-dark bg-gradient-left">
+      <div class="container">
+        <div class="row center-xs">
+          <div class="col-xs-12">
+            <div class="pvl">
+              <img src="./images/logo.png" width="300" class="mtl">
+              <div class="pvl">
+                <h1 class="primary-contrast">Votre coach agile</h1>
+                <p class="p--large primary">Réduisez les risques. Favorisez les succès.</p>
+              </div>
+            </div>
+
+            <!--<div class="pvl">
+              <div class="button button--success bg-gradient-left button--round button--large hovs acts show-modal" onclick="ga('send', 'event', 'click', 'play');" data-modal="video-modal"><i class="icon-play_circle_filled"></i>Lancer la vidéo
+              </div>
+            </div>-->
+          </div>
+          <div class="col-xs-8 center-xs">
+              <div class="video video--16_9 mbl">
+                <iframe width="100%" height="auto" src="https://www.youtube.com/embed/9dGZKrn4HUk" frameborder="0" allowfullscreen></iframe>
+              </div>
+            </div>
+        </div>
+      </div>
+    </div>
+    <div class="container-wrapper bg-success bg-gradient-left pvl" id="registration">
+      <div class="container ptl pb">
+        <div class="center-xs">
+          <h2 class="light mbs"> Inscrivez-vous à notre newsletter</h2>
+          <p class="p--large light"><span class="secondary"> Et soyez averti du lancement de CaptainScrum !</span> les 6 premiers mois !</p>
+        </div>
+        <form class="row mtl bottom-xs" id="form" onsubmit="register(); return false;">
+          <div class="col-xs-12 col-sm-4 mb">
+            <div class="input input--primary input--invert">
+              <label>Entreprise</label>
+              <input type="text" name="company" id="company" required />
+            </div>
+          </div>
+          <div class="col-xs-12 col-sm-4 mb">
+            <div class="input input--primary input--invert">
+              <label>Email</label>
+              <input type="email" name="email" id="email" required />
+            </div>
+          </div>
+          <div class="col-xs-12 col-sm-4 mb">
+            <button type="submit" class="button button--success button--invert button--fluid"><i class="icon-send"></i>Envoyer
+            </button>
+          </div>
+        </form>
+
+        <div id="thanks" class="light center-xs mt" style="display: none">
+          Merci pour votre intérêt, notre service commercial va prendre rapidement contact avec vous.
+        </div>
+      </div>
+    </div>
+    <div class="container-wrapper bg-secondary background-image-container">
+      <div class="background-image op-1" style="background-image:url(./images/08_DASHBOARD.png)"></div>
+      <div class="container pvl">
+        <div class="row pvl center-xs">
+          <div class="col-xs-12">
+            <h1 class="success"></h1>
+            <h2 class="light fw1">Une vision claire</h2>
+            <h3 class="light fw1 op-6">Et des objectifs atteints !</h3>
+          </div>
+        </div>
+        <div class="row pb">
+          <div class="col-xs-12 col-sm-4 center-xs pa">
+            <h1 class="item h1--large"><i class="mrs icon-euro_symbol"></i>
+            </h1>
+            <h5 class="light op-7">Maîtrisez votre budget</h5>
+          </div>
+          <div class="col-xs-12 col-sm-4 center-xs pa">
+            <h1 class="item h1--large"><i class="mrs icon-alarm"></i>
+            </h1>
+            <h5 class="light op-7">Respectez les délais</h5>
+          </div>
+          <div class="col-xs-12 col-sm-4 center-xs pa">
+            <h1 class="item h1--large"><i class="mrs icon-trending_up"></i>
+            </h1>
+            <h5 class="light op-7">Rentabilisez vos investissements</h5>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container pvl">
+      <div class="row pvl bdb bd-grey-light middle-xs">
+        <div class="col-xs-12 col-sm-7 hide-xs"><img class="bd bd-grey-light br" src="./images/08_DASHBOARD.png" width="100%"></div>
+        <div class="col-xs-12 col-sm-5 center-xs end-sm mb">
+          <h2 class="mbs primary">Aide à la décision </h2>
+          <div class="row center-xs end-sm mbs">
+            <div class="col-xs-4">
+              <div class="bdb bd-grey-light"></div>
+            </div>
+          </div>
+          <p class="mbs grey-dark">Indicateurs de<span class="success fw9"> productivité</span></p>
+          <p class="mbs grey-dark"><span class="success fw9"> Collaboration</span> chat et animation des réunions</p>
+          <p class="mbs grey-dark"> Support d'<span class="success fw9"> aide et conseils</span></p>
+          <p class="mbs grey-dark"><span class="success fw9"> Rappels</span> des tâches prioritaires et daily meetings</p>
+        </div>
+        <div class="col-xs-12 col-sm-7 show-xs"><img class="bd bd-grey-light br" src="./images/08_DASHBOARD.png" width="100%"></div>
+      </div>
+      <div class="row pvl bdb bd-grey-light middle-xs">
+        <div class="col-xs-12 col-sm-5 mb center-xs start-sm">
+          <h2 class="mbs primary">Pédagogique</h2>
+          <div class="row center-xs start-sm mbs">
+            <div class="col-xs-4">
+              <div class="bdb bd-grey-light"></div>
+            </div>
+          </div>
+          <p class="mbs grey-dark"> <span class="success fw9"> Construction</span> du projet</p>
+          <p class="mbs grey-dark">Explications sur la <span class="success fw9"> méthode SCRUM</span></p>
+          <p class="mbs grey-dark">Tutos d'<span class="success fw9"> experts</span></p>
+          <p class="mbs grey-dark"><span class="success fw9">Aide</span> à la rédaction des stories</p>
+        </div>
+        <div class="col-xs-12 col-sm-7"><img class="bd bd-grey-light br" src="./images/06_PROJET.png" width="100%"></div>
+      </div>
+      <div class="row pvl middle-xs">
+        <div class="col-xs-12 col-sm-7 hide-xs"><img class="bd bd-grey-light br" src="./images/07_STORIES.png" width="100%"></div>
+        <div class="col-xs-12 col-sm-5 center-xs end-sm mb">
+          <h2 class="mbs primary">Simple</h2>
+          <div class="row center-xs end-sm mbs">
+            <div class="col-xs-4">
+              <div class="bdb bd-grey-light"> </div>
+            </div>
+          </div>
+          <p class="mbs grey-dark"><span class="success fw9"> Configuration</span> rapide</p>
+          <p class="mbs grey-dark"><span class="success fw9"> Interface</span> ergonomique</p>
+          <p class="mbs grey-dark"><span class="success fw9"> Gestion </span> des bugs et releases</p>
+          <p class="mbs grey-dark"><span class="success fw9"> Intégration</span> des pièces jointes</p>
+
+        </div>
+        <div class="col-xs-12 col-sm-7 show-xs"><img class="bd bd-grey-light br" src="./images/07_STORIES.png" width="100%"></div>
+      </div>
+    </div>
+    <div class="container-wrapper bg-grey-light pvl">
+      <div class="container ptl pb">
+        <div class="row center-xs">
+          <div class="col-xs-12 mbl">
+            <h2 class="dark">Tarifs</h2>
+          </div>
+          <!--<div class="col-xs-12 col-sm-6 col-md-6 mb mt">
+            <div class="pa br bg-light">
+              <h2 class="bdb bd-grey-light primary pb mb">0<sup>€</sup> </h2>
+              <p class="p--large"></p>
+              <p>Preparez votre projet en toute sérénité</p>
+            </div>
+          </div>-->
+          <div class="col-xs-12  col-sm-6 col-md-6 mb">
+            <div class="pa br bg-light">
+              <h2 class="h2--large primary">59<sup>€</sup><sub><small>/mois</small></sub> </h2>
+              <h5 class="bdb bd-grey-light primary pb mb">1er sprint offert</h5>
+              <p class="pvt"><i class="icon icon-check success"></i> Projets illimités</p>
+              <p class="pvt"><i class="icon icon-check success"></i> Equipes illimités</p>
+              <p class="pvt"><i class="icon icon-check success"></i> Sans engagement</p>
+            </div>
+          </div>
+          <!--<div class="col-xs-12 col-sm-4 col-md-3 mb mt">
+            <div class="pa br bg-light">
+              <h2 class="bdb bd-grey-light primary pb mb">200<sup>€</sup> </h2>
+              <p class="p--large">Coaching individualisé</p>
+              <p>Construction des projets</p>
+              <p>Intégration de l'équipe</p>
+              <p>Accès au support d'aide en ligne</p>
+            </div>
+          </div>-->
+        </div>
+      </div>
+    </div>
+
+  </div>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.js"></script>
+  <script src="./scripts/main.js"></script>
+  <script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+    ga('create', 'UA-99003265-1', 'auto');
+    ga('send', 'pageview');
+
+  </script>
+  <script>
+    function register()
+    {
+      ga('send', 'event', 'click', 'register');
+      $.ajax({
+        url: '/api/sendmail',
+        method: "POST",
+        data: {
+          company: $('#company').val(),
+          email: $('#email').val(),
+        },
+        success: function() {
+          $('#thanks').show();
+          $('#form').hide();
+          ga('send', 'event', 'transform', 'register');
+          fbq('track', 'Lead');
+
+        }
+      });
+    }
+  </script>
+  <script>
+    window.intercomSettings = {
+      app_id: "epi68u1b"
+    };
+  </script>
+  <script>(function(){var w=window;var ic=w.Intercom;if(typeof ic==="function"){ic('reattach_activator');ic('update',intercomSettings);}else{var d=document;var i=function(){i.c(arguments)};i.q=[];i.c=function(args){i.q.push(args)};w.Intercom=i;function l(){var s=d.createElement('script');s.type='text/javascript';s.async=true;s.src='https://widget.intercom.io/widget/epi68u1b';var x=d.getElementsByTagName('script')[0];x.parentNode.insertBefore(s,x);}if(w.attachEvent){w.attachEvent('onload',l);}else{w.addEventListener('load',l,false);}}})()</script>
+</body></html>
