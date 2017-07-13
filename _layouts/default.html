@@ -54,7 +54,7 @@ src="https://www.facebook.com/tr?id=1409393065820922&ev=PageView
         <div class="row center-xs">
           <div class="col-xs-12">
             <div class="pvl">
-              <img src="/images/logo.png" width="300" class="mtl">
+              <a href="/"><img src="/images/logo.png" width="300" class="mtl"></a>
               <div class="pvl"  itemscope itemtype="http://schema.org/BlogPosting">
                 <h1 class="primary-contrast">{{ page.title }}</h1>
                   <span class="primary-contrast post-date">
@@ -95,6 +95,38 @@ src="https://www.facebook.com/tr?id=1409393065820922&ev=PageView
 
     {{ content }}
 
+
+    <div class="container-wrapper bg-success bg-gradient-left pvl" id="registration">
+      <div class="container ptl pb">
+        <div class="center-xs">
+          <h2 class="light mbs"> Inscrivez-vous à notre newsletter</h2>
+          <p class="p--large light"><span class="secondary"> Et soyez averti du lancement de CaptainScrum !</span> les 6 premiers mois !</p>
+        </div>
+        
+        <form class="row mtl bottom-xs" id="form" onsubmit="register(); return false;">
+          <div class="col-xs-12 col-sm-4 mb">
+            <div class="input input--primary input--invert">
+              <label>Entreprise</label>
+              <input type="text" name="company" id="company" required />
+            </div>
+          </div>
+          <div class="col-xs-12 col-sm-4 mb">
+            <div class="input input--primary input--invert">
+              <label>Email</label>
+              <input type="email" name="email" id="email" required />
+            </div>
+          </div>
+          <div class="col-xs-12 col-sm-4 mb">
+            <button type="submit" class="button button--success button--invert button--fluid"><i class="icon-send"></i>Envoyer
+            </button>
+          </div>
+        </form>
+
+        <div id="thanks" class="light center-xs mt" style="display: none">
+          Merci pour votre intérêt, notre service commercial va prendre rapidement contact avec vous.
+        </div>
+      </div>
+    </div>
   </div>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.js"></script>
   <script src="/scripts/main.js"></script>
@@ -112,6 +144,30 @@ src="https://www.facebook.com/tr?id=1409393065820922&ev=PageView
     window.intercomSettings = {
       app_id: "epi68u1b"
     };
+  </script>
+  <script>
+    function register()
+    {
+      ga('send', 'event', 'click', 'register');
+      $.ajax({
+        url: 'https://formspree.io/cedric@donkeycode.com',
+        method: "POST",
+        dataType: "json",
+        data: {
+          company: $('#company').val(),
+          email: $('#email').val(),
+          _subject: "Scrumbox register",
+          _cc: "sonia@donkeycode.com"
+        },
+        success: function() {
+          $('#thanks').show();
+          $('#form').hide();
+          ga('send', 'event', 'transform', 'register');
+          fbq('track', 'Lead');
+
+        }
+      });
+    }
   </script>
   <script>(function(){var w=window;var ic=w.Intercom;if(typeof ic==="function"){ic('reattach_activator');ic('update',intercomSettings);}else{var d=document;var i=function(){i.c(arguments)};i.q=[];i.c=function(args){i.q.push(args)};w.Intercom=i;function l(){var s=d.createElement('script');s.type='text/javascript';s.async=true;s.src='https://widget.intercom.io/widget/epi68u1b';var x=d.getElementsByTagName('script')[0];x.parentNode.insertBefore(s,x);}if(w.attachEvent){w.attachEvent('onload',l);}else{w.addEventListener('load',l,false);}}})()</script>
 </body></html>
