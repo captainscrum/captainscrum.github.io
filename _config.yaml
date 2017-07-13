@@ -1,7 +1,6 @@
 safe:        true
 #auto:        true
 #lsi:         true
-markdown:    rdiscount
 paginate:    3
 permalink: /blog/:year-:month-:day-:title.html
 default_locale: fr
