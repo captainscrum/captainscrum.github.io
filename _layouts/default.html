@@ -50,12 +50,18 @@ src="https://www.facebook.com/tr?id=1409393065820922&ev=PageView
   <div class="layout bg-primary layout--backdrop-modal hide-modal"></div>
   <div class="layout layout--scroll">
     <div class="container-wrapper bg-dark bg-gradient-left">
-      <div class="container">
+      <div class="container light">
+        <nav class="row ptl">
+          <ul style="display: block; text-align: right">
+            <li style="display: inline" class="prl"><a class="light" style="font-weight: bold;" href="/">ACCUEIL</a></li>
+            <li style="display: inline; "><a class="success" style="font-weight: bold;" href="/blog.html">LE BLOG</a></li>
+          </ul>
+        </nav>
         <div class="row center-xs">
           <div class="col-xs-12">
             <div class="pvl">
-              <a href="/"><img src="/images/logo.png" width="300" class="mtl"></a>
-              <div class="pvl"  itemscope itemtype="http://schema.org/BlogPosting">
+              <a href="/"><img src="/images/logo.png" width="300" class="mts"></a>
+              <div class="ptl"  itemscope itemtype="http://schema.org/BlogPosting">
                 <h1 class="primary-contrast">{{ page.title }}</h1>
                   <span class="primary-contrast post-date">
                     {% if page.date %}
