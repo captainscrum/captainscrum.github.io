@@ -1,8 +1,8 @@
-safe:        true
+safe:        false
 #auto:        true
 #lsi:         true
-paginate:    3
 permalink: /blog/:year-:month-:day-:title
 default_locale: fr
 
-gems: [jekyll-paginate]
+gems: 
+  - jekyll-sitemap
