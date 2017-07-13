@@ -7,7 +7,7 @@ title: "Le blog"
     
     {% for post in site.posts %}
     
-    <div class="col-xs-12 col-sm-4 center-xs pa" itemscope itemtype="http://schema.org/BlogPosting" class="post-title">
+    <div class="col-xs-12 col-sm-4 center-xs pa post-title" itemscope itemtype="http://schema.org/BlogPosting">
         <a href="{{ post.url }}" class="link">
             <img src="{{ post.image }}" style="max-width: 100%" />
             <h4 itemprop="headline" itemprop="name">{{ post.title }}</h4>
