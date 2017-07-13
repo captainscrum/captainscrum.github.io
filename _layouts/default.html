@@ -1,0 +1,117 @@
+<!DOCTYPE html><!--[if lt IE 9]>
+<html class='lt-ie9 no-js' lang='en'>
+<![endif]-->
+<!--[if gte IE 9]><!-->
+<html class="no-js" lang="en">
+<!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <title>CaptainScrum : Votre coach agile</title>
+  <meta name="description" content="Pilotez vos projets agiles en maitrisant vos délais et votre budget">
+  <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=0">
+  <link rel="stylesheet" href="/styles/main.css">
+  <!-- Facebook Pixel Code -->
+<script>
+!function(f,b,e,v,n,t,s)
+{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+n.queue=[];t=b.createElement(e);t.async=!0;
+t.src=v;s=b.getElementsByTagName(e)[0];
+s.parentNode.insertBefore(t,s)}(window,document,'script',
+'https://connect.facebook.net/en_US/fbevents.js');
+ fbq('init', '1409393065820922');
+fbq('track', 'PageView');
+</script>
+<noscript>
+ <img height="1" width="1"
+src="https://www.facebook.com/tr?id=1409393065820922&ev=PageView
+&noscript=1"/>
+</noscript>
+<!-- End Facebook Pixel Code -->
+</head>
+<body><!--[if lt IE 9]>
+<p class='browsehappy'>You are using an <strong>outdated</strong> browser. Please <a href='http://browsehappy.com/'>upgrade your browser</a> to improve your experience.</p>
+<![endif]-->
+  <!--<div class="layout layout--modal layout--modal--bottom" id="video-modal">
+    <div class="layout--modal__content">
+      <div class="row end-xs">
+        <div class="col-xs-4">
+          <div class="button button--light button--transparent button--large button--icon-alone hide-modal"><i class="icon-close"></i>
+          </div>
+        </div>
+      </div>
+      <div class="video video--16_9">
+        <iframe width="100%" height="auto" src="https://www.youtube.com/embed/CQmZCTFrNus" frameborder="0" allowfullscreen></iframe>
+      </div>
+    </div>
+  </div>-->
+  <div class="layout bg-primary layout--backdrop-modal hide-modal"></div>
+  <div class="layout layout--scroll">
+    <div class="container-wrapper bg-dark bg-gradient-left">
+      <div class="container">
+        <div class="row center-xs">
+          <div class="col-xs-12">
+            <div class="pvl">
+              <img src="/images/logo.png" width="300" class="mtl">
+              <div class="pvl"  itemscope itemtype="http://schema.org/BlogPosting">
+                <h1 class="primary-contrast">{{ page.title }}</h1>
+                  <span class="primary-contrast post-date">
+                    {% if page.date %}
+                    <time pubdate="pubdate" datetime="{{ page.date | date_to_xmlschema }}">
+                      <meta itemprop="datePublished" content="{{ page.date | date_to_xmlschema }}" />
+                      {% assign m = page.date | date: "%-m" %}
+                      {{ page.date | date: "%-d" }}
+                      {% case m %}
+                        {% when '1' %}Janvier
+                        {% when '2' %}Février
+                        {% when '3' %}Mars
+                        {% when '4' %}Avril
+                        {% when '5' %}Mai
+                        {% when '6' %}Juin
+                        {% when '7' %}Juillet
+                        {% when '8' %}Août
+                        {% when '9' %}Septembre
+                        {% when '10' %}Octobre
+                        {% when '11' %}Novembre
+                        {% when '12' %}Décembre
+                      {% endcase %}
+                      {{ page.date | date: "%Y" }}
+                    </time>
+                    {% endif %}
+                  </span>
+
+              </div>
+            </div>
+
+            <!--<div class="pvl">
+              <div class="button button--success bg-gradient-left button--round button--large hovs acts show-modal" onclick="ga('send', 'event', 'click', 'play');" data-modal="video-modal"><i class="icon-play_circle_filled"></i>Lancer la vidéo
+              </div>
+            </div>-->
+          </div>
+      </div>
+    </div>
+
+    {{ content }}
+
+  </div>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.js"></script>
+  <script src="/scripts/main.js"></script>
+  <script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+    ga('create', 'UA-99003265-1', 'auto');
+    ga('send', 'pageview');
+
+  </script>
+  <script>
+    window.intercomSettings = {
+      app_id: "epi68u1b"
+    };
+  </script>
+  <script>(function(){var w=window;var ic=w.Intercom;if(typeof ic==="function"){ic('reattach_activator');ic('update',intercomSettings);}else{var d=document;var i=function(){i.c(arguments)};i.q=[];i.c=function(args){i.q.push(args)};w.Intercom=i;function l(){var s=d.createElement('script');s.type='text/javascript';s.async=true;s.src='https://widget.intercom.io/widget/epi68u1b';var x=d.getElementsByTagName('script')[0];x.parentNode.insertBefore(s,x);}if(w.attachEvent){w.attachEvent('onload',l);}else{w.addEventListener('load',l,false);}}})()</script>
+</body></html>
