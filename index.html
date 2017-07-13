@@ -80,6 +80,7 @@ src="https://www.facebook.com/tr?id=1409393065820922&ev=PageView
           <h2 class="light mbs"> Inscrivez-vous à notre newsletter</h2>
           <p class="p--large light"><span class="secondary"> Et soyez averti du lancement de CaptainScrum !</span> les 6 premiers mois !</p>
         </div>
+        
         <form class="row mtl bottom-xs" id="form" onsubmit="register(); return false;">
           <div class="col-xs-12 col-sm-4 mb">
             <div class="input input--primary input--invert">
@@ -236,11 +237,14 @@ src="https://www.facebook.com/tr?id=1409393065820922&ev=PageView
     {
       ga('send', 'event', 'click', 'register');
       $.ajax({
-        url: '/api/sendmail',
+        url: 'https://formspree.io/cedric@donkeycode.com',
         method: "POST",
+        dataType: "json",
         data: {
           company: $('#company').val(),
           email: $('#email').val(),
+          _subject: "Scrumbox register",
+          _cc: "sonia@donkeycode.com"
         },
         success: function() {
           $('#thanks').show();
