@@ -1,7 +1,9 @@
 safe:        true
-auto:        true
-lsi:         true
+#auto:        true
+#lsi:         true
 markdown:    rdiscount
 paginate:    3
-permalink:   /:categories/:title.html
+permalink: /blog/:year-:month-:day-:title.html
+default_locale: fr
 
+gems: [jekyll-paginate]
